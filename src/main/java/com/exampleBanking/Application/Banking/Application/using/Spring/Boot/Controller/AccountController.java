@@ -1,4 +1,5 @@
 package com.exampleBanking.Application.Banking.Application.using.Spring.Boot.Controller;
+
 import com.exampleBanking.Application.Banking.Application.using.Spring.Boot.Entity.Account;
 
 import com.exampleBanking.Application.Banking.Application.using.Spring.Boot.Service.AccountService;
@@ -35,5 +36,6 @@ public class AccountController {
         Double amount = request.get("amount");
         return accountService.withdraw(id, amount);
     }
+
 }
 
